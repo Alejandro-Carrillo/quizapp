@@ -1,0 +1,41 @@
+.btn-options {
+  position: relative;
+  font-size: 17px;
+  padding: 10px 0px;
+  width: 95%;
+  margin: auto;
+  background-color: var(--second-color);
+  color: var(--third-color);
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: var(--font);
+  overflow: hidden;
+  border: none;
+}
+
+.btn-options::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.correct {
+  background-color: rgb(5, 190, 129);
+  color: #fff;
+}
+
+.inCorrect {
+  background-color: brown;
+  color: #fff;
+  width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .btn-options {
+    width: 100%;
+  }
+}

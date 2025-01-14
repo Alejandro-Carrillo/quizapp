@@ -1,0 +1,17 @@
+.options-container {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px 0px;
+  gap: 5px;
+}
+
+@media screen and (min-width: 450px) {
+
+  .options-container {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin: auto;
+    gap: 7px;
+  }
+}

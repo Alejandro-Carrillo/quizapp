@@ -1,0 +1,60 @@
+.box-graphic-count-down {
+  position: fixed;
+  display: block;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: var(--first-color);
+}
+
+.number-count-down {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+}
+
+.img-count-down {
+  width: 100%;
+  height: 100%;
+}
+
+.bar-count-down {
+  fill: none;
+  stroke: green;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-dasharray: 107;
+  stroke-dashoffset: 0;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+}
+
+.css-carga {
+  animation: offset 60s linear forwards;
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 107;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .box-graphic-count-down {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .box-graphic-count-down {
+    top: 30px;
+    right: 100px;
+  }
+}
