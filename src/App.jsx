@@ -56,8 +56,8 @@ function App() {
         Question={nextQuestion}
         Dato={Questions[currentQuestion]}
       />
-      <a href="https:/carrillodev.com/" className="foot" target="__blank">
-        Alejandro Carrillo | carrillodev.com
+      <a href="https://alejandro-carrillo.web.app/" className="foot" target="__blank">
+        Alejandro Carrillo
       </a>
     </main>
   );
